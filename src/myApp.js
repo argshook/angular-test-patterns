@@ -17,7 +17,7 @@ app.factory('PersonService', function(visitor, $http) {
 
     this.remove = function(id) {
       return $http.post('/people/delete/' + id, this);
-    }
+    };
   };
 });
 
